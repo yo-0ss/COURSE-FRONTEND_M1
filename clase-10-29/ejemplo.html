@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- Define el tipo de documento como HTML5 -->
+<html lang="es">
+<!-- La etiqueta raíz que envuelve todo el documento HTML -->
+
+<head>
+    <!-- Contiene metadatos del documento -->
+    <meta charset="UTF-8">
+    <!-- Define la codificación de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define la configuración de la vista para dispositivos móviles -->
+    <title>Ejemplo de Página HTML</title>
+    <!-- Título de la página que se mostrará en la pestaña del navegador -->
+    <style>
+        /* Estilos CSS internos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        header, footer {
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Contenedor principal del contenido visible de la página -->
+
+    <header>
+        <!-- Define el encabezado del sitio o sección -->
+        <h1>Bienvenidos a Mi Página</h1>
+        <!-- Título principal de la página -->
+        <nav>
+            <!-- Navegación principal de la página -->
+            <a href="#contenido">Contenido</a> |
+            <a href="#about">Sobre Nosotros</a> |
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contenido principal de la página -->
+        
+        <section id="contenido">
+            <!-- Sección con el contenido principal -->
+            <h2>Contenido Principal</h2>
+            <p>Este es un párrafo dentro de la sección de contenido principal.</p>
+            <!-- Párrafo descriptivo -->
+
+            <ul>
+                <!-- Lista no ordenada -->
+                <li>Elemento de lista 1</li>
+                <li>Elemento de lista 2</li>
+                <li>Elemento de lista 3</li>
+            </ul>
+        </section>
+
+        <section id="about">
+            <!-- Sección de "Sobre Nosotros" -->
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una empresa dedicada a la creación de contenido educativo en tecnología.</p>
+            <!-- Párrafo informativo -->
+            <figure>
+                <!-- Figura que contiene una imagen y un pie de foto -->
+                <img src="ejemplo.jpg" alt="Ejemplo de imagen" width="300">
+                <!-- Imagen representativa con un atributo de anchura -->
+                <figcaption>Imagen de ejemplo</figcaption>
+                <!-- Pie de foto para la imagen -->
+            </figure>
+        </section>
+
+        <section id="contacto">
+            <!-- Sección de contacto -->
+            <h2>Contacto</h2>
+            <form action="/submit" method="POST">
+                <!-- Formulario de contacto que envía datos por método POST -->
+                <label for="nombre">Nombre:</label>
+                <!-- Etiqueta del campo de texto para el nombre -->
+                <input type="text" id="nombre" name="nombre" required>
+                <!-- Campo de texto para ingresar el nombre -->
+                
+                <label for="email">Email:</label>
+                <!-- Etiqueta del campo de texto para el correo electrónico -->
+                <input type="email" id="email" name="email" required>
+                <!-- Campo de texto para ingresar el correo electrónico -->
+
+                <label for="mensaje">Mensaje:</label>
+                <!-- Etiqueta del campo de texto para el mensaje -->
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <!-- Área de texto para escribir el mensaje -->
+                
+                <button type="submit">Enviar</button>
+                <!-- Botón para enviar el formulario -->
+            </form>
+        </section>
+
+        <hr>
+        <!-- Línea horizontal para separar secciones -->
+
+        <article>
+            <!-- Artículo individual o pieza de contenido -->
+            <h3>Artículo Relacionado</h3>
+            <p>Este es un artículo relacionado sobre desarrollo web.</p>
+            <!-- Párrafo del contenido del artículo -->
+        </article>
+    </main>
+
+    <aside>
+        <!-- Contenido adicional o secundario -->
+        <h4>Artículos Populares</h4>
+        <ol>
+            <!-- Lista ordenada de artículos -->
+            <li>Cómo aprender HTML</li>
+            <li>Guía de CSS</li>
+            <li>Introducción a JavaScript</li>
+        </ol>
+    </aside>
+
+    <footer>
+        <!-- Pie de página de la página web -->
+        <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+        <!-- Texto del copyright -->
+    </footer>
+
+    <script>
+        // Script JavaScript que se ejecutará en la página
+        console.log("Bienvenido a mi sitio web.");
+    </script>
+
+</body>
+</html>
