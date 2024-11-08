@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi práctica del HTML semantico</title>
+</head>
+<body>
+    <!-- HEADER es la sección de encabezado; generalmete contiene el nombre del sitio 
+        y menu de navegación -->
+    <header>
+        <h1>Mi Primer Sitio WEB</h1>
+        <!-- NAV menu de navegación -->
+        <nav>
+            <ul>
+                <li>Sobre Mi</li>
+                <li>Intereses</li>
+                <li>Enlaces</li>
+            </ul>
+        </nav>
+    </header>
+    <!-- MAIN es la sección principal que contiene el contenido central de la página -->
+     <main>
+        <section>
+            <h2>Sobre Mi</h2>
+            <p>¡Hola! Soy Yosselin, tengo 18 años y actualmente estoy cursando 3er semestre para ser ingeniera administradora en sistemas.</p>
+        </section>
+        <section>
+            <h2>Intereses</h2>
+            <ul>
+                <li>Programación</li>
+                <li>Musica</li>
+                <li>Streams/Videos</li>
+            </ul>
+            <!-- FIGURE agrupa  contenido visual como imagenes, y es común utilizarla en 
+             un conjunto con la etiquetaa figcaption, que proporciona un título o descripción -->
+             <figure>
+                <img src="./img/artista.png" alt="Mi artista favorito" height="200">
+                <figcaption>CL mi artista favorita. </figcaption>
+             </figure>
+             
+        </section>
+        <section>
+            <h2>Enlaces</h2>
+            <p>Mis sitios WEB favoritos:</p>
+            <ul>
+                <!-- a es una etiqueta de enlace, generalmente viene con un atributo href
+                    que indica el destino del enlace, otro atributo es el target que
+                    da control sobre como abrira el enlace -->
+                    <li>
+                        <!-- Link abre en otra ventana -->
+                        <a href="https://www.twitch.tv" target="_blank">Twitch</a>
+                    </li>
+                    <li>
+                        <!-- Link abre en el mismo sitio -->
+                        <a href="https://www.youtube.com/" target="_parent">YouTube</a>
+                    </li>
+                    <li>
+                        <!-- Sin target -->
+                        <a href="https://x.com/home" >Twitter</a>
+                    </li>
+            </ul>
+        </section>
+     </main>
+     <footer>
+        <p>&copy; 2024 Yosselin Ríos. Todos los derechos reservados.</p>
+     </footer>
+</body>
+</html>
